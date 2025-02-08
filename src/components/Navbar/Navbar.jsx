@@ -53,11 +53,11 @@ const Navbar = () => {
           <div className="md:hidden" onClick={()=>setOpen(!open)} >
             <MdMenu className="text-4xl "/>
           </div>
-          <ResponsiveMenu open={open}/>
+         
         </div>
       </nav>
       {/*Mobile Sidebar section  */}
-    
+      <ResponsiveMenu open={open}/>
     </>
   );
 };
