@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { NavBaramenu } from "../../mockData/data";
+import  { useState } from "react";
+import { NavbarMenu } from "../../mockData/data";
 import { CiSearch } from "react-icons/ci";
 import { FaDumbbell } from "react-icons/fa";
 import { MdMenu } from "react-icons/md";
@@ -21,7 +21,7 @@ const Navbar = () => {
           {/* Menu section */}
           <div className="hidden md:block">
             <ul className="flex item-center gap-6 text-gray-600">
-              {NavBaramenu.map((item) => {
+              {NavbarMenu.map((item) => {
                 return (
                   <li key={item.id}>
                     <a
