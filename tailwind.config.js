@@ -1,12 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: { 
-      colors:{
+    extend: {
+      fontFamily: {
+        playfair: ["playfair display", "serif"],
+      },
+      colors: {
         primary: "#ff8901",
-        secondary:"#fb923c",
+        secondary: "#fb923c",
       },
       container: {
         center: true,
@@ -17,8 +19,8 @@ export default {
           xl: "5rem",
           "2xl": "6rem",
         },
+      },
     },
+    plugins: [],
   },
-  plugins: [],
-}
-}
+};
