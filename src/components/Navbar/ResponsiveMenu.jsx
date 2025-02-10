@@ -1,7 +1,7 @@
-import React from "react";
+import PropTypes from "prop-types";
 import { motion, AnimatePresence } from "motion/react";
 
-const ResponsiveMenu = ({ open }) => {
+const ResponsiveMenu = ({open}) => {
   return (
     <AnimatePresence mode="wait">
       {open && (
@@ -24,6 +24,11 @@ const ResponsiveMenu = ({ open }) => {
       )}
     </AnimatePresence>
   );
+};
+
+// ✅ Validation des props
+ResponsiveMenu.propTypes = {
+ open: PropTypes.bool.isRequired, // correct
 };
 
 export default ResponsiveMenu;

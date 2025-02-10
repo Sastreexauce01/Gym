@@ -48,7 +48,7 @@ const Equiments = () => {
               <motion.div
                  variants={SlideLeft(item.delay)}
                  initial="hidden"
-                 animate="visible"
+                 whileInView="visible"
                  key={item.id}
                 className="space-y-4 p-6 bg-[#fbfbfb] hover:bg-white rounded-xl hover:shadow-[0_0_22px_0_rgba(0,0,0,0.15)] "
               >

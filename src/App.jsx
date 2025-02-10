@@ -5,7 +5,9 @@ import Equiments from "./components/Equipments/Equiments";
 import Banner from "./components/Banner/Banner";
 
 
+
 import Img1 from "./assets/2.png";
+import TabComp from "./components/Tab/TabCompt";
 // import Img2 from "./assets/3.png";
 
 const BannerData = {
@@ -42,6 +44,7 @@ const App = () => {
       <Equiments />
       <Banner {...BannerData} />
       {/* <Banner  {...Banner2Data}/> */}
+      <TabComp/>
     </div>
   );
 };

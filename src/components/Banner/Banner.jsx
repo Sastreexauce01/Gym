@@ -4,22 +4,22 @@ import { SlideUp } from "../../utility/animation";
 
 const Banner = ({ image, title, subtitle, link }) => {
   return (
-    <div className="container">
+    <div className="container ">
       <div className=" bg-[#f9f9f9] grid  grid-cols-1 md:grid-cols-2  space-y-6 md:space-y-0 py-14 ">
       
         {/* Banner Image section */}
-        <div>
+        <div className="flex justify-center items-center" >
           <motion.img
             initial={{ opacity: 0, scale: 0.5 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ type: "sping", stiffness: 100, delay: 0.5 }}
             src={image}
             alt=""
-            className="w-[300px] md:max-w-[400px] xl:min-w-[600px] h-full object-cover"
+            className="w-[300px] md:max-w-[400px] xl:min-w-[600px] h-full object-cover "
           />
         </div>
         {/* Banner Text section */}
-        <div className="flex flex-col justify-center text-center md:text-left space-y-4 lg:max-w-[500px]">
+        <div className="flex flex-col justify-center text-center md:text-left space-y-4 lg:max-w-[500px] ">
           <motion.p
             variants={SlideUp(0.5)}
             initial="hidden"
