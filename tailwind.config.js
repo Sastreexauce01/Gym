@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        playfair: ["playfair display", "serif"],
+        playfair: ["Playfair Display", "serif"],
       },
       colors: {
         primary: "#ff8901",
@@ -21,6 +21,6 @@ export default {
         },
       },
     },
-    plugins: [],
   },
+  plugins: [],
 };
